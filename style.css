@@ -1,0 +1,98 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+</style>
+
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    font-family: 'Outfit', sans-serif;
+  min-height: 100%wh;
+  border: 1px solid rgb(88, 43, 43);
+  background-color: hsl(217, 54%, 11%);
+}
+
+.card{
+    position: relative;
+    margin: 20px 0;
+    padding: 20px;
+   border-radius: 19px;
+   font-family: 'Outfit
+   font-size: 18px;
+    width: 320px;
+    background-color:  hsl(216, 50%, 16%);
+}
+.title{
+    color: hsl(0, 0%, 100%);
+    transition:.6s
+}
+/*cuando haga hover sobre el titulo y la imagen deberia aparecer la clase
+ active; desaparece la clase active*/
+.title:hover{
+    color:hsl(178, 100%, 50%);
+}
+.active{
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: hsla(178, 100%, 50%, 0.46);
+   display: none;
+}
+
+.img{
+    width: 100%;
+    border-radius: 19px ;
+    cursor: pointer;
+}
+ .img:hover .active {
+    ;
+ }
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.eth , .clock{
+    display: flex; 
+    align-items: center;  
+}
+.eth img, .clock img{
+max-height: 25px;
+
+}
+
+.eth_p{
+    font-weight: 600;
+    color:  hsl(178, 100%, 50%);
+}
+.footer{
+    display: flex;
+    align-items: flex-start;
+    padding-top: 20px;
+    border-top:hsl(215, 32%, 27%) 1px  solid ;
+}
+
+.avatar{
+    height: 50px;
+    border-radius: 50%;
+     border: hsl(0, 0%, 100%) 1px solid;
+
+}
+span{
+    color: white;
+    margin-left: 5px;
+}
+p{
+    color: hsl(215, 32%, 27%);
+    margin-left: 10px;
+}
